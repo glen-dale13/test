@@ -7,14 +7,14 @@
 }
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  font-size: 20px;
   font-weight: 300;
-  background-image: url("../img/fancy-bg.jpg");
-  background-size: 100%;
-  background-repeat: repeat;
+ background-color:#DDCFB7;
   background-attachment: scroll;
 }
 
+}
 header{
   color: #fff;
   padding-bottom: 0.5em;
@@ -23,7 +23,7 @@ header{
 
 main {
   font-size: 18px;
-  background-color: rgba(255,255,255,0.4);
+  background-color: black;
   height: 100%;
 }
 
@@ -32,7 +32,7 @@ h1{
 }
 
 h2{
-  font-family: 'Open Sans', sans-serif;
+  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
   font-weight: 600;
 }
 
@@ -43,11 +43,11 @@ h2 a{
 
 h2 a:hover{
   color: #fff;
-  background-color: #713be3;
+  background-color: darkgreen;
 }
 
 h3{
-  font-family: 'Open Sans', sans-serif;
+  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
   font-weight: 500;
 }
 
@@ -58,7 +58,7 @@ a {
 
 a:hover {
   background: #fff;
-  color: #713be3;
+  color: darkgreen;
 }
                       /*NAV STYLE STARTS HERE*/
 nav {
@@ -99,7 +99,7 @@ ul > li > ul > li {
 }
 
 nav ul {
-  background-color: #713be3;
+  background-color: #C31114;
 }
 
 li > a {
@@ -108,19 +108,10 @@ li > a {
 }
 
 ul > li > ul > li {
-  background: #eee;
-  border-top: 1px solid #ccc;
+  background: #FFFFFF;
+  border-top: 1px solid #F7F3F3;
 }
 
-ul > li > ul > li > a {
-  color: #fff;
-  background-color: rgba(118, 69, 223, 0.8);
-}
-
-ul > li > ul > li > a:hover {
-  color: rgb(118, 69, 223);
-  background-color: #fff;
-}
                       /*NAV STYLE ENDS HERE*/
                       /*FOOTER STYLE STARTS HERE*/
 footer {
@@ -133,7 +124,7 @@ footer {
   display: grid;
   grid-gap: 5px;
   grid-template-areas:
-    "contact call email telegram more";
+    "email engage call";
 }
 
 footer > ul {
@@ -153,16 +144,10 @@ footer ul {
   background-color: #713be3;
 }
 
-#contact{
+#engage{
   position: relative;
   right: 20px;
   grid-area: contact;
-}
-
-#call{
-  position: relative;
-  right: 20px;
-  grid-area: call;
 }
 
 #email{
@@ -171,19 +156,6 @@ footer ul {
   grid-area: email;
 }
 
-#telegram {
-  position: relative;
-  right: 20px;
-  grid-area: telegram;
-}
-
-#more{
-  position: relative;
-  right: 20px;
-  grid-area: more;
-}
-                      /*FOOTER STYLE ENDS HERE*/
-                      /* HOME STYLE STARTS HERE  */
 #home main{
   z-index: -1;
   width: 81%;
@@ -194,13 +166,13 @@ footer ul {
   grid-template-columns: 250px 50%;
   grid-gap: 25px;
   grid-template-areas:
-    "photo-of-me welcome-message";
+    "ubs-logo welcome-message";
   margin-top: 35px;
   padding-left: 20%;
 }
 
 #home main img{
-  grid-area: photo-of-me;
+  grid-area: ubs-logo;
   margin-top: 50%;
   z-index: 0;
   position: relative;
