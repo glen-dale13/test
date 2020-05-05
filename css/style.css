@@ -270,3 +270,27 @@ footer ul {
 #item-6{
   grid-area: item6;
 }
+
+#exec{
+  width: 91%;
+  padding-left: 10%;
+  padding-top: 35px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "pres treas";
+  padding-bottom: 100px;
+}
+
+#exec section article p{
+  line-height: 22px;
+}
+
+#pres{
+  grid-area: pres;
+}
+
+#treas{
+  grid-area: treas;
+}
