@@ -186,3 +186,41 @@ footer ul {
   grid-area: call;
 }
            /*FOOTER STYLE ENDS HERE*/
+
+                      /* ABOUT ME STYLE STARTS HERE  */
+#about main{
+  width: 90%;
+  padding-left: 10%;
+  padding-top: 8%;
+  padding-right: 13px;
+  padding-bottom: 0;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "history history mission"
+    "meeting dues location";
+}
+
+#history{
+  grid-area: history;
+}
+
+#mission{
+  grid-area: mission;
+}
+
+#meeting{
+  grid-area: meeting;
+}
+
+#dues{
+  grid-area: dues;
+	
+}
+
+#location{
+  grid-area: location;
+	
+}
