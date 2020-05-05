@@ -294,3 +294,27 @@ footer ul {
 #treas{
   grid-area: treas;
 }
+
+#events{
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 35px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "election tailgate";
+  padding-bottom: 100px;
+}
+
+#events section article p{
+  line-height: 22px;
+}
+
+#election{
+  grid-area: election;
+}
+
+#tailgate{
+  grid-area: tailgate;
+}
