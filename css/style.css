@@ -5,21 +5,12 @@
 }
 
 body{
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+  font-weight: 300;
+  background-size: 100%;
   font-weight: 300;
   background-size: 100%;
 	color: black;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-padding-top: -10%;
-	padding-bottom: -20%;
-  width: 95%;
-	height:auto;
-		
 }
 
 header{
@@ -30,8 +21,19 @@ header{
 
 main {
   font-size: 18px;
-  background-color: white;
+  background-color: #fff;
   height: 100%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+padding-top: -10%;
+padding-bottom: -20%;
+  width: 95%;
+height:auto;
+		
 }
 
 h1{
@@ -39,7 +41,7 @@ h1{
 }
 
 h2{
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
   font-weight: 600;
 }
 
@@ -50,11 +52,11 @@ h2 a{
 
 h2 a:hover{
   color: #fff;
-  background-color: crimson;
+  background-color: #713be3;
 }
 
 h3{
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
   font-weight: 500;
 }
 
@@ -65,10 +67,9 @@ a {
 
 a:hover {
   background: #fff;
-  color: darkgreen;
-}	
-
-                     /*NAV STYLE STARTS HERE*/
+  color: #713be3;
+}
+                      /*NAV STYLE STARTS HERE*/
 nav {
   position: fixed;
   top: 0;
@@ -80,7 +81,7 @@ nav > ul {
   margin-top: 0;
   list-style: none;
   display: grid;
-  grid-template-columns:1.5fr 2fr 2.5fr 1.5fr 1.5fr;
+ grid-template-columns:1.5fr 2fr 2.5fr 1.5fr 1.5fr;
   text-align: center;
 }
 
@@ -97,7 +98,7 @@ ul > li > ul {
   display: none;
 }
 
-ul > li: hover > ul {
+ul > li:hover > ul {
   display: block;
   position: absolute;
 }
@@ -107,7 +108,7 @@ ul > li > ul > li {
 }
 
 nav ul {
-  background-color: #C31114;
+  background-color: crimson;
 }
 
 li > a {
@@ -115,9 +116,22 @@ li > a {
   padding: 10px;
 }
 
-/*NAV STYLE ENDS HERE*/
+ul > li > ul > li {
+  background: #eee;
+  border-top: 1px solid #ccc;
+}
 
-           /*FOOTER STYLE STARTS HERE*/      
+ul > li > ul > li > a {
+  color: #fff;
+  background-color: darkgreen;
+}
+
+ul > li > ul > li > a:hover {
+  color: darkgreen;
+  background-color: #fff;
+}
+                      /*NAV STYLE ENDS HERE*/
+                      /*FOOTER STYLE STARTS HERE*/
 footer {
   position: fixed;
   bottom: 0;
@@ -145,67 +159,30 @@ footer > ul > li{
 
 footer ul {
   padding-left: 0;
-  background-color: cr;
+  background-color: darkgreen;
 }
 
-#ubs{
+#home{
   position: relative;
-  right: 20px;
-  grid-area: ubs;
-	
+  right: 0px;
+  grid-area: home;
+}
+
 #email{
   position: relative;
   right: 20px;
   grid-area: email;
 }
+
 #engage{
   position: relative;
   right: 20px;
   grid-area: engage;
 }
-	
+
 #call{
   position: relative;
   right: 20px;
   grid-area: call;
 }
-	
-/*FOOTER STYLE ENDS HERE*/
-	
-/* ABOUT ME STYLE STARTS HERE  */
-#about main{
-  width: 90%;
-  padding-left: 10%;
-  padding-top: 8%;
-  padding-right: 13px;
-  padding-bottom: 0;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    "history history mission"
-    "meeting dues location";
-}
-
-#history{
-  grid-area: history;
-}
-
-#mission{
-  grid-area: mission;
-}
-
-#meeting{
-  grid-area: meeting;
-}
-
-#dues{
-  grid-area: dues;
-	
-}
-
-#location{
-  grid-area: location;
-	
-}
+           /*FOOTER STYLE ENDS HERE*/
