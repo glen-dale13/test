@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
 #wrapper{
   position: relative;
   width: 90%;
@@ -8,12 +6,22 @@
 
 body{
   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-  font-size: 20px;
   font-weight: 300;
- background-color:#DDCFB7;
+  background-size: 100%;
+	color: black;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+padding-top: -10%;
+	padding-bottom: -20%;
+  width: 95%;
+	height:auto;
+		
 }
+
 header{
   color: #fff;
   padding-bottom: 0.5em;
@@ -22,9 +30,8 @@ header{
 
 main {
   font-size: 18px;
-  background-color: black;
-  height:auto;
-color: #fff;
+  background-color: white;
+  height: 100%;
 }
 
 h1{
@@ -43,7 +50,7 @@ h2 a{
 
 h2 a:hover{
   color: #fff;
-  background-color: darkgreen;
+  background-color: crimson;
 }
 
 h3{
@@ -59,8 +66,9 @@ a {
 a:hover {
   background: #fff;
   color: darkgreen;
-}
-                     
+}	
+
+                     /*NAV STYLE STARTS HERE*/
 nav {
   position: fixed;
   top: 0;
@@ -72,7 +80,7 @@ nav > ul {
   margin-top: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1.5fr 2fr 2.5fr 1.5fr 1.5fr;
+  grid-template-columns:1.5fr 2fr 2.5fr 1.5fr 1.5fr;
   text-align: center;
 }
 
@@ -89,7 +97,7 @@ ul > li > ul {
   display: none;
 }
 
-ul > li:hover > ul {
+ul > li: hover > ul {
   display: block;
   position: absolute;
 }
@@ -107,12 +115,9 @@ li > a {
   padding: 10px;
 }
 
-ul > li > ul > li {
-  background: #FFFFFF;
-  border-top: 1px solid #F7F3F3;
-}
+/*NAV STYLE ENDS HERE*/
 
-                 
+           /*FOOTER STYLE STARTS HERE*/      
 footer {
   position: fixed;
   bottom: 0;
@@ -121,9 +126,9 @@ footer {
   width: 90%;
   align-items: baseline;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 10px;
   grid-template-areas:
-    "email engage call";
+    "home email engage call";
 }
 
 footer > ul {
@@ -140,58 +145,34 @@ footer > ul > li{
 
 footer ul {
   padding-left: 0;
-  background-color: #156110;
+  background-color: cr;
 }
 
-#engage{
+#ubs{
   position: relative;
   right: 20px;
-  grid-area: contact;
-}
-
+  grid-area: ubs;
+	
 #email{
   position: relative;
   right: 20px;
   grid-area: email;
 }
-
-#home main{
-   z-index: -1;
-  width: 82%;
+#engage{
   position: relative;
-  top: 20px;
-  padding-bottom: 100px;
-  display: grid;
-  grid-template-columns: 250px 50%;
-  grid-gap: 25px;
-  grid-template-areas:
-  "welcome-message" "ubs-logo";
-  margin-top: 35px;
-  padding-left: 20%;
-
-#home main img{
-  grid-area: ubs-logo;
-  margin-top: 100%;
-  padding-bottom: 50;
+  right: 20px;
+  grid-area: engage;
 }
-
-#home main p{
+	
+#call{
   position: relative;
-  padding-left: 60px;
-  padding-right: 60px;
-text-align:center;
-	width: 70%;
+  right: 20px;
+  grid-area: call;
 }
-
-#home main h2{
-  padding-top: 50px;
-}
-
-#home main article{
-  grid-area: welcome-message;
-}
-
-                      
+	
+/*FOOTER STYLE ENDS HERE*/
+	
+/* ABOUT ME STYLE STARTS HERE  */
 #about main{
   width: 90%;
   padding-left: 10%;
@@ -200,16 +181,31 @@ text-align:center;
   padding-bottom: 0;
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-areas:
-    "mission" "mission" "history"
+    "history history mission"
+    "meeting dues location";
+}
+
+#history{
+  grid-area: history;
 }
 
 #mission{
   grid-area: mission;
 }
 
-#history{
-  grid-area: history;
+#meeting{
+  grid-area: meeting;
+}
+
+#dues{
+  grid-area: dues;
+	
+}
+
+#location{
+  grid-area: location;
+	
 }
