@@ -284,6 +284,15 @@ footer ul {
   padding-bottom: 100px;
 }
 
+#exec body{
+  font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+  font-weight: 300;
+  background-size: 100%;
+  font-weight: 300;
+  background-size: 100%;
+	color: black;
+}
+
 #exec section article p{
   line-height: 22px;
 }
