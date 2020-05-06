@@ -221,12 +221,13 @@ footer ul {
   grid-area: location;
 	
 }
-#social-life main{
+
+#photos main{
   padding-left: 7%;
   width: 94%;
 }
 
-#social-life section{
+#photos section{
   max-width: 1160px;
   padding-top: 10px;
   display: grid;
@@ -234,15 +235,15 @@ footer ul {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-areas:
-    "item1 item2 item3"
-    "item4 item5 item6";
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8";
 }
 
-#social-life article a:hover {
+#photos article a:hover {
   background: none;
 }
 
-#social-life section img{
+#photos section img{
   max-width: 350px;
   max-height: 350px;
 }
@@ -269,6 +270,15 @@ footer ul {
 
 #item-6{
   grid-area: item6;
+}
+
+#item-7{
+  grid-area: item7;
+	
+}
+
+#item-8{
+  grid-area: item8;
 }
 
 #exec{
